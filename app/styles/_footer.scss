@@ -1,0 +1,442 @@
+
+.footer {
+    background-color: #303033;
+    color: #fff;
+    padding: 20px 0;
+
+    ul {
+        list-style: none;
+        margin-left:0;
+        padding-left:0;
+    }
+
+    @media only screen and (max-width:640px) {
+      text-align: center
+    }
+
+    .container {
+      margin: 0 auto;
+      width: 1130px;
+      text-align: left;
+      @include clearfix;
+    }
+}
+
+.footer h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 16px;
+    text-align: left;
+    padding-bottom: 15px
+}
+
+@media only screen and (max-width:640px) {
+    .footer h3 {
+        text-align: center
+    }
+}
+
+.footer .homebox {
+    margin: 20px 0
+}
+
+@media only screen and (max-width:640px) {
+    .footer .homebox {
+        margin-bottom: 0
+    }
+}
+
+.footer .homebox a {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #ccc;
+    line-height: 14px;
+    text-align: left;
+
+    &:hover {
+      background-color: transparent;
+      text-decoration: underline;
+      color: white;
+    }
+}
+
+.footer .homebox ul li {
+    padding-bottom: 10px;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+@media only screen and (max-width:640px) {
+    .footer .homebox ul li.social {
+        padding: 0 5px
+    }
+}
+
+.footer .homebox ul li.social a img {
+    padding-right: 8px
+}
+
+.footer .homebox ul li.social img {
+    vertical-align: text-bottom
+}
+
+.footer .homebox ul li a img {
+    padding-right: 25px
+}
+
+@media only screen and (max-width:640px) {
+    .footer .homebox ul li a {
+        text-align: center;
+    }
+}
+
+.footer .homebox.social-list {
+    margin: 20px 0 10px 0;
+    padding: 20px 0;
+    border-top: 1px #414144 solid
+}
+
+@media only screen and (max-width:1023px) {
+    .footer .homebox.social-list {
+        margin-top: 10px
+    }
+}
+
+.footer .homebox.social-list ul {
+    margin-top: 10px
+}
+
+.footer .homebox.social-list .social {
+    display: inline-block;
+    padding: 0 20px
+}
+
+@media only screen and (max-width:640px) {
+    .footer .homebox.social-list .social {
+        padding: 0 8px
+    }
+}
+
+.footer .homebox.social-list .social a {
+    font-size: 23px;
+    line-height: 23px
+}
+
+@media only screen and (max-width:1023px) {
+    .footer .homebox.social-list .social a {
+        font-size: 20px;
+        line-height: 20px
+    }
+}
+
+.footer .homebox.social-list .social:first-child {
+    padding: 0 20px 0 0
+}
+
+@media only screen and (max-width:640px) {
+    .footer .homebox.social-list .social:first-child {
+        padding: 0 8px 0 0
+    }
+}
+
+.footer .homebox.social-list .social:last-child {
+    padding: 0 0 0 20px
+}
+
+@media only screen and (max-width:640px) {
+    .footer .homebox.social-list .social:last-child {
+        padding: 0 0 0 8px
+    }
+}
+
+@media only screen and (max-width:640px) {
+    .footer .homebox.social-list .social {
+        font-size: 18px
+    }
+}
+
+.footer .homebox.social-list .social-media-awesome,
+.footer .homebox.social-list .social-media-awesome:before {
+    font-family: fontawesome
+}
+
+.footer .homebox.social-list .social-media-atrapalo {
+    font-family: atrapaloico
+}
+
+.footer .homebox .atenTelf {
+    clear: both
+}
+
+.footer .homebox .atenTelf span {
+    color: #ccc;
+    font-size: 13px;
+    line-height: 18px;
+    display: block
+}
+
+.footer .homebox .atenTelf .tlf,
+.footer .homebox .atenTelf .tlf span {
+    font-size: 30px;
+    font-weight: 400;
+    color: #ccc;
+    line-height: 32px;
+    text-align: left;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 3px
+}
+
+@media only screen and (max-width:640px) {
+    .footer .homebox .atenTelf .tlf,
+    .footer .homebox .atenTelf .tlf span {
+        text-align: center
+    }
+}
+
+.footer .homebox .atenTelf .tlf span {
+    margin-bottom: -2px;
+    line-height: 28px
+}
+
+@media only screen and (max-width:640px) {
+    .footer .homebox .atenTelf .tlf span {
+        margin-bottom: 5px
+    }
+}
+
+.footer .homebox .atenTelf .tlf span.txtTelf {
+    font-family: open_sansregular, sans-serif;
+    font-size: 13px
+}
+
+.footer .homebox .footerMail {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #999;
+    line-height: initial;
+    text-align: left;
+    margin-top: 10px
+}
+
+@media only screen and (max-width:640px) {
+    .footer .homebox .footerMail {
+        text-align: center
+    }
+}
+
+.footer .homebox .footerMail a {
+    font-weight: 400
+}
+
+.footer .homebox.centro-ayuda>a {
+    display: block;
+    padding-bottom: 10px
+}
+
+@media only screen and (max-width:640px) {
+    .footer .homebox.centro-ayuda>a {
+        text-align: center
+    }
+}
+
+.footer .homebox.link-social {
+    margin-top: 35px;
+    text-align: center
+}
+
+.footer .homebox.link-social h3 {
+    text-align: center
+}
+
+@media only screen and (max-width:640px) {
+    .footer .homebox.link-social {
+        border-top: 1px solid #555;
+        margin-top: 25px!important;
+        padding-top: 15px
+    }
+}
+
+.footer .homebox.link-social .social img {
+    margin-right: .41rem
+}
+
+.footer .homebox .sellos-latam {
+    max-height: 60px;
+    overflow: hidden;
+    margin-top: 10px;
+    display: inline-block
+}
+
+.footer .homebox .sellos-latam i {
+    display: inline-block;
+    font-size: 75px;
+    vertical-align: middle;
+    margin: -5px 0 0 -10px
+}
+
+.footer .homebox .sellos-latam i.wide-icon {
+    margin-left: 10px
+}
+
+.footer .homebox .sellos-latam .iconed-href i {
+    font-size: 45px;
+    margin: -10px 0 0 -5px
+}
+
+.footer .homebox .sellos-latam .sociamipci {
+    display: inline-block;
+    font-size: 75px;
+    color: #fff
+}
+
+.footer .homebox .sellos-latam .sociamipci:hover {
+    text-decoration: none
+}
+
+.footer .homebox .sellos-latam .sociamipci i {
+    font-size: 46px;
+    line-height: 30px;
+    margin: 10px 0 0 0
+}
+
+.footer .homebox .sellos-latam .codigo-agencia-actualizada {
+    float: left;
+    width: 100px;
+    height: 57px;
+    background-color: #fff;
+    margin-left: 15px;
+    padding-top: 3px
+}
+
+.footer .camcom {
+    margin: 20px 0 10px;
+    background-position: 1px -140px
+}
+
+.footer .zoneLogDomine {
+    text-align: center
+}
+
+.footer .zoneLogDomine img {
+    display: inline-block;
+    margin-bottom: 15px;
+    vertical-align: middle
+}
+
+@media only screen and (max-width:1023px) {
+    .footer .zoneLogDomine img {
+        margin-bottom: 5px
+    }
+}
+
+.footer .zoneLogDomine address {
+    margin-top: 10px
+}
+
+@media only screen and (max-width:1023px) {
+    .footer .zoneLogDomine address {
+        margin-bottom: 21px;
+        margin-top: 0
+    }
+}
+
+.footer .zoneLogDomine address,
+.footer .zoneLogDomine p {
+    color: #999;
+    display: inline-block;
+    font-style: normal;
+    line-height: 18px;
+    width: 75%
+}
+
+.footer .zoneLogDomine span.bold {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase
+}
+
+@media only screen and (max-width:640px) {
+    .footer .row div.column:last-of-type {
+        padding-left: 0;
+        padding-right: 0
+    }
+}
+
+.column, .columns {
+    width: 100%;
+    float: left;
+    padding-right: .625rem;
+    padding-left: .625rem;
+}
+
+@media print, screen and (min-width: 40.0625em){
+  .medium-4 {
+      width: 33.3333333333%;
+  }
+}
+
+@media print, screen and (min-width: 64em){
+  .large-3 {
+      width: 25%;
+  }
+}
+
+.centered-column, .centered-column h3 {
+    text-align: center;
+}
+
+address {
+    font-family: "Open Sans",sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    font-style: normal;
+}
+
+.icon-houdinis:before {
+    content: "\e811"
+}
+
+.flag {
+    background: url(../images/generic-sprite.png) no-repeat 0 0;
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 7px;
+}
+
+.fl24 {
+    background-position: -270px 0;
+}
+
+.fl12 {
+    background-position: -60px 0;
+}
+
+.fl19 {
+    background-position: -120px 0;
+}
+
+.fl22 {
+    background-position: -210px 0;
+}
+
+.fl23 {
+    background-position: -240px 0;
+}
+
+.fl25 {
+    background-position: -300px 0;
+}
+
+.fl21 {
+    background-position: -180px 0;
+}
+
+.fl20 {
+    background-position: -150px 0;
+}

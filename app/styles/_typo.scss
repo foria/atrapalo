@@ -1,0 +1,65 @@
+@font-face {
+    font-family: atrapalodisplay;
+    src: url(../fonts/atrapalodisplay.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: atrapaloroundeddisplay;
+    src: url(../fonts/atrapaloroundeddisplay.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: atrapaloscr;
+    src: url(../fonts/atrapaloscr.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;;
+}
+
+a {
+
+}
+
+h1,
+h2 {
+    font-family: atrapaloroundeddisplay;
+}
+
+h1,
+h2 {
+    font-size: 102px;
+
+    strong {
+        font-size: 130px;
+    }
+}
+
+
+h1 {
+    color: #cc50ac;
+    line-height: 80px;
+
+    strong {
+        color: #ea6a80;
+        line-height: 110px;
+    }
+}
+
+h2 {
+    #tucasa & {
+        color: white;
+    }
+}
+
+h3 {
+    font-family: atrapalodisplay;
+    font-size: 38.6px;
+    line-height: 1;
+}
