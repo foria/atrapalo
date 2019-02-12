@@ -22,9 +22,9 @@
     // Browser globals (root is window)
     root.Rellax = factory();
   }
-}(typeof window !== "undefined" ? window : global, function () {
+}(typeof window !== 'undefined' ? window : global, function () {
   var Rellax = function(el, options){
-    "use strict";
+    'use strict';
 
     var self = Object.create(Rellax.prototype);
 
@@ -98,7 +98,7 @@
 
     // The elements don't exist
     else {
-      throw new Error("The elements you're trying to select don't exist.");
+      throw new Error('The elements you\'re trying to select don\'t exist.');
     }
 
     // Has a wrapper and it exists
@@ -109,7 +109,7 @@
         if (wrapper) {
           self.options.wrapper = wrapper;
         } else {
-          throw new Error("The wrapper you're trying to use don't exist.");
+          throw new Error('The wrapper you\'re trying to use don\'t exist.');
         }
       }
     }
@@ -201,9 +201,9 @@
 
         // Remove "transform" string and save the attribute
         if (delimiter) {
-          transform = " " + trimmedStyle.slice(11, delimiter).replace(/\s/g,'');
+          transform = ' ' + trimmedStyle.slice(11, delimiter).replace(/\s/g,'');
         } else {
-          transform = " " + trimmedStyle.slice(11).replace(/\s/g,'');
+          transform = ' ' + trimmedStyle.slice(11).replace(/\s/g,'');
         }
       }
 
