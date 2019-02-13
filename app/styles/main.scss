@@ -12,22 +12,43 @@ img {
 
 header {
   background-color: #d5f8f5;
+  position: relative;
+
+  @include media-breakpoint-down(sm) {
+      height: 100vh;
+  }
 }
 
 .logo {
   position: relative;
+
+  @include media-breakpoint-down(sm) {
+    margin-top: 8vh;
+  }
 
   p {
     position: absolute;
     right: 15vw;
     bottom: 0;
     transform: translatey(20%);
+
+    @include media-breakpoint-down(sm) {
+      right: 0;
+      transform: translatey(130%);
+    }
   }
 }
 
 .teaser {
   margin-top: -10vw;
   margin-bottom: -25vw;
+
+  @include media-breakpoint-down(sm) {
+    position: absolute;
+    bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 
   img {
     width: 100%;
@@ -40,6 +61,10 @@ header {
     background-size: 110% auto;
     position: sticky;
     bottom: 0;
+
+    @include media-breakpoint-down(sm) {
+      position: absolute;
+    }
   }
 }
 
@@ -49,6 +74,15 @@ header {
 
   a {
     color: #112f3f;
+
+    &:hover,
+    &:focus {
+        color: #cc50ac;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding: 0.5rem 0.85rem;
+    }
   }
 }
 
@@ -66,6 +100,7 @@ header {
   .carousel-indicators li.active {
     background-color: #e58964;
   }
+  #tucasa & a:hover,
   .carousel-indicators li {
     background-color: #ecaa8f;
   }
@@ -78,8 +113,9 @@ header {
   .carousel-indicators li.active {
     background-color: #9c5892;
   }
+  #tucasa & a:hover,
   .carousel-indicators li {
-    background-color: #ecaa8f;
+    background-color: lighten(#9c5892, 20%);
   }
 }
 .purple {
@@ -90,8 +126,9 @@ header {
   .carousel-indicators li.active {
     background-color: #67608b;
   }
+  #tucasa & a:hover,
   .carousel-indicators li {
-    background-color: #ecaa8f;
+    background-color: lighten(#67608b, 20%);
   }
 }
 .blue {
@@ -102,8 +139,9 @@ header {
   .carousel-indicators li.active {
     background-color: #223240;
   }
+  #tucasa & a:hover,
   .carousel-indicators li {
-    background-color: #ecaa8f;
+    background-color: lighten(#223240, 30%);
   }
 }
 
@@ -120,9 +158,17 @@ header {
     margin-bottom: 10px;
     position: relative;
 
+    @include media-breakpoint-down(sm) {
+      height: auto;
+    }
+
     span {
       position: absolute;
       bottom: 0;
+
+      @include media-breakpoint-down(sm) {
+        position: static;
+      }
     }
   }
 
@@ -145,11 +191,18 @@ header {
     cursor: pointer;
   }
 
+  @include media-breakpoint-down(sm) {
+    .col-md-3 {
+      margin-bottom: 50px;
+    }
+  }
+
 }
 
 .foldblock {
   display: none;
   overflow: hidden;
+  position: relative;
   transition: height 1s ease;
 
   &.show {
@@ -162,7 +215,10 @@ header {
     align-items: center;
 
     p {
-      margin-bottom: 0;
+
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -174,6 +230,10 @@ header {
     font-size: 31px;
     font-weight: bold;
     white-space: nowrap;
+
+    @include media-breakpoint-down(md) {
+      font-size: 18px;
+    }
 
     &:before {
       content: ">";
@@ -209,6 +269,49 @@ header {
   }
 }
 
+.leeve {
+  background: center no-repeat;
+  background-size: contain;
+  position: absolute;
+
+  &--1 {
+    width: 52px;
+    height: 42px;
+    background-image: url(../images/hoja_01.svg);
+    top: 0;
+    right: 1vw;
+  }
+  &--2 {
+    width: 34px;
+    height: 53px;
+    background-image: url(../images/hoja_02.svg);
+    top: -10vw;
+    left: 5vw;
+  }
+  &--3 {
+    width: 53px;
+    height: 37px;
+    background-image: url(../images/hoja_03.svg);
+    top: 30vw;
+    left: 0;
+    transform: translatex(-100%);
+  }
+  &--4 {
+    width: 30px;
+    height: 51px;
+    background-image: url(../images/hoja_04.svg);
+    top: 0;
+    right: 40vw;
+  }
+  &--5 {
+    width: 41px;
+    height: 42px;
+    background-image: url(../images/hoja_05.svg);
+    top: 0;
+    right: 30vw;
+  }
+}
+
 video {
   width: 100%;
   display: block;
@@ -217,6 +320,11 @@ video {
 #comehome {
   background-color: #bdf488;
   padding: 50px 0 0;
+  position: relative;
+
+  @include media-breakpoint-down(sm) {
+      height: 100vh;
+  }
 
   .container {
     position: relative;
@@ -236,11 +344,28 @@ video {
     position: absolute;
     bottom: 0;
     right: 15vw;
+
+    @include media-breakpoint-down(md) {
+      width: 50vw;
+      right: 5vw;
+      margin-bottom: 0;
+    }
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+      position: static;
+    }
   }
 }
 
 .videobg {
   margin-top: -5vw;
+
+  @include media-breakpoint-down(sm) {
+      position: absolute;
+      bottom: 0;
+      margin-top: 0;
+  }
 
   img {
     width: 100%;

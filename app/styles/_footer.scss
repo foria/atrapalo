@@ -14,11 +14,36 @@
       text-align: center
     }
 
-    .container {
-      margin: 0 auto;
-      width: 1130px;
-      text-align: left;
-      @include clearfix;
+    .row {
+        max-width: 75rem;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .promo-app-footer__content {
+        display: inline-block;
+        border: solid 1px #666;
+        width: 192px;
+        height: 65px;
+        position: relative;
+        margin-bottom: 20px;
+        border-radius: 2px;
+        cursor: pointer;
+
+        .content__image {
+            position: relative;
+            float: left;
+            margin: 9px 15px 0;
+        }
+
+        .content__text {
+            position: relative;
+            margin: 12px 0 0;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: left;
+            color: #ccc;
+        }
     }
 }
 
@@ -439,4 +464,17 @@ address {
 
 .fl20 {
     background-position: -150px 0;
+}
+
+@media screen and (max-width: 40em) {
+    .hide-for-small-only,
+    .show-for-medium {
+        display: none!important;
+    }
+}
+
+@media screen and (max-width: 63.9375em) {
+    .show-for-large {
+        display: none!important;
+    }
 }

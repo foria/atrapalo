@@ -19,12 +19,15 @@
     font-style: normal
 }
 
-body {
-    font-family: 'Open Sans', sans-serif;;
+@font-face {
+    font-family: atrapaloico;
+    src: url(../fonts/atrapaloico.woff) format('woff');
+    font-weight: 400;
+    font-style: normal
 }
 
-a {
-
+body {
+    font-family: 'Open Sans', sans-serif;;
 }
 
 h1,
@@ -36,8 +39,16 @@ h1,
 h2 {
     font-size: 102px;
 
+    @include media-breakpoint-down(sm) {
+        font-size: 62px;
+    }
+
     strong {
         font-size: 130px;
+
+        @include media-breakpoint-down(sm) {
+            font-size: 90px;
+        }
     }
 }
 
@@ -46,9 +57,17 @@ h1 {
     color: #cc50ac;
     line-height: 80px;
 
+    @include media-breakpoint-down(sm) {
+        line-height: 50px;
+    }
+
     strong {
         color: #ea6a80;
         line-height: 110px;
+
+        @include media-breakpoint-down(sm) {
+            line-height: 80px;
+        }
     }
 }
 

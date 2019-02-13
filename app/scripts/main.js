@@ -20,6 +20,10 @@ $(document).ready(function(){
         }
         $('.foldblock.'+block).addClass('show');
         $('.foldblock.'+block).height(foldblockH);
+
+        $('html, body').animate({
+            scrollTop: $( '#foldblocks' ).offset().top
+        }, 1000);
     })
 
     $('#mainmenu a').click(function(event){
@@ -27,7 +31,10 @@ $(document).ready(function(){
         event.stopPropagation();
         $('html, body').animate({
             scrollTop: $( $.attr(this, 'href') ).offset().top
-        }, 500);
+        }, 1000);
     })
 
+    SmoothParallax.init();
+
 })
+
