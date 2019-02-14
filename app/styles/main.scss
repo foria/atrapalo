@@ -329,6 +329,7 @@ video {
 
   .container {
     position: relative;
+    z-index: 2;
   }
 
   h2 {
@@ -342,6 +343,7 @@ video {
 
   p {
     width: 40vw;
+    max-width: 512px;
     position: absolute;
     bottom: 0;
     right: 15vw;
