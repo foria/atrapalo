@@ -30,7 +30,8 @@ header {
     position: absolute;
     right: 15vw;
     bottom: 0;
-    transform: translatey(20%);
+    z-index: 2;
+    //transform: translatey(20%);
 
     @include media-breakpoint-down(sm) {
       right: 0;
